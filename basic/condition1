@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+a=3
+b=3
+
+### if 语句
+echo "if grammer"
+if (($a == $b))
+then
+  echo "a == b"
+  echo "statement 2"
+fi
+
+# if else grammer
+echo "if else grammer..."
+if (( $b == 4)); then
+    echo "b==4"
+else
+  echo "b!=4"
+fi
+
+## if elif grammer
+echo "if elif grammer"
+if (($b <= 2))
+then
+  echo "b <= 2"
+elif (($b <= 3))
+then
+  echo "b <= 3"
+elif (($b <= 4))
+then
+  echo "b <= 4"
+else
+  echo "other condition"
+fi
+

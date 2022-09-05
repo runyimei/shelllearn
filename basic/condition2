@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+#  学习 test 语法， test 可以用 [] 代替
+if [ "abc" == "abc" ]; then
+    echo "abc==abc"
+fi
+
+a1=15
+if [ ${a1} -le 16 ]; then
+    echo "a1<=16"
+fi
