@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+a=20
+url() {
+   echo "runyi.com"
+}
+
+sum() {
+   a=$1
+   b=$2
+   echo "a:${a}, b:${b}"
+   echo $((a+b))
+   return $((a+b))
+}
+
+url
+
+sum 10 20
+echo "==="
+echo $c

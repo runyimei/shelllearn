@@ -1,11 +1,32 @@
 #!/usr/bin/env bash
 
 #  学习 test 语法， test 可以用 [] 代替
+# 字符串的比较， 用 == !=
 if [ "abc" == "abc" ]; then
     echo "abc==abc"
 fi
 
+# 数字的比较；用 -eq -lt -gt -ge -le
 a1=15
 if [ ${a1} -le 16 ]; then
     echo "a1<=16"
+fi
+
+# 将 [] 换成 test 命令
+num1=100
+num2=100
+if test $num1 -eq $num2
+then
+  echo "num1 equals num2"
+else
+  echo "num1 not equals num2"
+fi
+
+# 判断文件
+cd /bin
+if test -e ./bash
+then
+  echo "file exists"
+else
+  echo "file not exists"
 fi
